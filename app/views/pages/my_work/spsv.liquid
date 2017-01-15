@@ -1,0 +1,27 @@
+---
+title: St. Patrick St. Vincent High School
+slug: spsv
+handle: spsv
+position: 0
+listed: true
+published: true
+is_layout: false
+---
+{% extends "layouts/simple" %}
+
+{% block content/main %}
+<div class="center">
+<div>
+<h3>St. Patrick St. Vincent High School</h3>
+<a href="http://www.spsv.org">http://www.spsv.org</a>
+<p>These designs were created for a (successful) sales pitch at St. Patrick - St. Vincent High School in Vallejo, CA. We hoped to be able to help them by providing a more flexible and dynamic web experience that would stay up to date with the school.</p>
+<h5>Scrolling Homepage Demo:</h5>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LgBTlr9Ho-s" frameborder="0" allowfullscreen></iframe>
+<p>Here are the before and after shots of the old site and final design:</p>
+</div>
+<img class='img-responsive' src='{{ "spsv_scroll_home.png" | theme_image_url }}' / >
+<img class='img-responsive' src='{{ "spsv_inner.png" | theme_image_url }}' / >
+<img class='img-responsive' src='{{ "spsv_brand.png" | theme_image_url }}' / >
+<img class='img-responsive' src='{{ "spsv_brand2.png" | theme_image_url }}' / >
+</div>
+{% endblock %}

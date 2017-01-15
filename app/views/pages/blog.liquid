@@ -1,0 +1,21 @@
+---
+title: Blog
+slug: blog
+position: 5
+listed: true
+published: true
+is_layout: false
+---
+
+{% extends 'layouts/simple' %}
+
+{% block content/main, short_name: true %}
+	{% paginate contents.blogs by 5 %}
+		{% for blog in paginate.collection %}
+			{% include 'blog-listing-snippet' %}
+		{% endfor %}
+	{{ paginate | default_pagination }}	
+	{% endpaginate %}
+
+{% endblock %}
+

@@ -1,0 +1,185 @@
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20161226-16274-v59cdu.rb extconf.rb
+checking for xmlNewDoc() in -lxml2... yes
+checking for nokogiri.h in /usr/local/lib/ruby/gems/2.2.0/gems/nokogiri-1.6.8/ext/nokogiri... no
+Using pkg-config version 1.1.7
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.1.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv using --with-opt-* flags... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.4.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Activating libxml2 2.9.4 (from /usr/local/lib/ruby/gems/2.2.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin15.0.0/libxml2/2.9.4)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.29.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Activating libxslt 1.1.29 (from /usr/local/lib/ruby/gems/2.2.0/gems/nokogiri-1.6.8/ports/x86_64-apple-darwin15.0.0/libxslt/1.1.29)...
+checking for main() in -llzma... yes
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+checking for nokogiri.h in /usr/local/lib/ruby/gems/2.2.0/gems/nokogiri-1.6.8/ext/nokogiri... yes
+checking for gumbo_parse() in -lgumbo... no
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling attribute.c
+compiling char_ref.c
+char_ref.rl:2496:18: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    int len = te - start;
+        ~~~   ~~~^~~~~~~
+1 warning generated.
+compiling error.c
+error.c:36:45: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+  int remaining_capacity = output->capacity - output->length;
+      ~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+error.c:65:43: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    remaining_capacity = output->capacity - output->length;
+                       ~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling nokogumbo.c
+In file included from nokogumbo.c:31:
+/usr/local/lib/ruby/gems/2.2.0/gems/nokogiri-1.6.8/ext/nokogiri/nokogiri.h:13:9: warning: '_GNU_SOURCE' macro redefined [-Wmacro-redefined]
+#define _GNU_SOURCE
+        ^
+/usr/local/Cellar/ruby/2.2.3/include/ruby-2.2.0/x86_64-darwin15/ruby/config.h:17:9: note: previous definition is here
+#define _GNU_SOURCE 1
+        ^
+nokogumbo.c:121:12: warning: assigning to 'char *' from 'const char [7]' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        ns = "xlink:";
+           ^ ~~~~~~~~
+nokogumbo.c:125:12: warning: assigning to 'char *' from 'const char [5]' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        ns = "xml:";
+           ^ ~~~~~~
+nokogumbo.c:129:12: warning: assigning to 'char *' from 'const char [7]' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        ns = "xmlns:";
+           ^ ~~~~~~~~
+nokogumbo.c:116:19: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  for (int i=0; i < attrs->length; i++) {
+                ~ ^ ~~~~~~~~~~~~~
+nokogumbo.c:138:47: warning: comparison of integers of different signs: 'unsigned long' and 'int' [-Wsign-compare]
+      if (strlen(ns) + strlen(attr->name) + 1 > namelen) {
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~
+nokogumbo.c:144:51: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+        namelen = strlen(ns) + strlen(attr->name) + 1;
+                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+nokogumbo.c:159:19: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  for (int i=0; i < children->length; i++) {
+                ~ ^ ~~~~~~~~~~~~~~~~
+nokogumbo.c:206:19: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  for (int i=0; i < children->length; i++) {
+                ~ ^ ~~~~~~~~~~~~~~~~
+nokogumbo.c:227:21: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+    for (int i=0; i < errors->length; i++) {
+                  ~ ^ ~~~~~~~~~~~~~~
+10 warnings generated.
+compiling parser.c
+parser.c:815:32: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    retval.index = last_table->index_within_parent;
+                 ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+parser.c:828:36: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  assert(node->index_within_parent == -1);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+parser.c:849:36: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  assert(node->index_within_parent == -1);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+parser.c:2848:32: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+      int prompt_attr_length = strlen(prompt_attr->value);
+          ~~~~~~~~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+compiling string_buffer.c
+compiling string_piece.c
+compiling tag.c
+tag.c:94:35: warning: implicit conversion loses integer precision: 'unsigned long' to 'unsigned int' [-Wshorten-64-to-32]
+  return gumbo_tagn_enum(tagname, strlen(tagname));
+         ~~~~~~~~~~~~~~~          ^~~~~~~~~~~~~~~
+1 warning generated.
+compiling tokenizer.c
+tokenizer.c:380:18: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+  int text_len = strlen(text);
+      ~~~~~~~~   ^~~~~~~~~~~~
+tokenizer.c:381:19: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+  return text_len == buffer->length &&
+         ~~~~~~~~ ^  ~~~~~~~~~~~~~~
+tokenizer.c:754:67: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+      gumbo_tagn_enum(tag_state->_buffer.data, tag_state->_buffer.length);
+      ~~~~~~~~~~~~~~~                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+tokenizer.c:842:63: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+                                           tag_state->_buffer.length);
+                                           ~~~~~~~~~~~~~~~~~~~^~~~~~
+4 warnings generated.
+compiling utf8.c
+utf8.c:140:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+      iter->_width = c - iter->_start + 1;
+                   ~ ~~~~~~~~~~~~~~~~~^~~
+utf8.c:167:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+      iter->_width = c - iter->_start + (c == iter->_start);
+                   ~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+utf8.c:179:29: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  iter->_width = iter->_end - iter->_start;
+               ~ ~~~~~~~~~~~^~~~~~~~~~~~~~
+3 warnings generated.
+compiling util.c
+compiling vector.c
+vector.c:33:22: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+  vector->capacity = initial_capacity;
+                   ~ ^~~~~~~~~~~~~~~~
+1 warning generated.
+linking shared-object nokogumboc.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogumboc.bundle ./.gem.20161226-16274-i48gnj

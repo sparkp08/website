@@ -1,0 +1,37 @@
+---
+title: Default layout
+is_layout: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <title>{{ site.name }}</title>
+
+    <link rel="shortcut icon" href="{{ 'favicon.png' | theme_image_url }}">
+      
+    {{ 'application.css' | stylesheet_tag }}
+    
+  </head>
+  <body style="overflow:hidden">
+    {% include 'nav' %}
+    {% block content %}
+        <div class="container">
+          {% block main, short_name: true %}
+
+          {% endblock %}
+        </div>
+    {% endblock %}
+
+    {% include 'footer2' %}
+
+    {{ 'jquery.min.js' | javascript_tag }} 
+    {{ 'bootstrap.min.js' | javascript_tag }}
+    {{ 'boxes.js' | javascript_tag }}
+  
+    {% google_analytics 'UA-72503172-2' %}  
+  </body>
+</html>

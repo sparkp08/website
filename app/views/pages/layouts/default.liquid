@@ -1,0 +1,79 @@
+---
+title: Default layout
+is_layout: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet"> 
+    <title>{{ site.name }}</title>
+     
+    <link rel="shortcut icon" href="{{ 'favicon.png' | theme_image_url }}">
+      
+    {{ 'application.css' | stylesheet_tag }}
+    {% if page.slug == 'spinner' %}
+    {{ 'spinner.css' | stylesheet_tag }}
+    {% endif %}
+    {% if page.slug == 'coloring' %}
+    {{ 'coloring.css' | stylesheet_tag }}
+    {% endif %}  
+    {% if page.slug == 'unemploymentbycounty' %}
+    {{ 'unemploymentMap.css' | stylesheet_tag }}
+    {% endif %} 
+    {{ 'jquery.min.js' | javascript_tag }} 
+
+    {% if page.slug == 'unemploymentbycounty' %}
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300,400,500,700" rel="stylesheet">
+    <script type="text/javascript">
+    var countiesArray = [];
+    function makeArray(data) {
+        var i = 0;
+        for (i; i < data.counties.length; i++) {
+            var currentData = data.counties[i];
+            countiesArray.push(
+                [   currentData.FIPS,
+                    currentData.Unemployment,
+                    currentData.County,
+                    currentData.Force,
+                    currentData.Employed,
+                    currentData.Unemployed,
+                    currentData.Period
+                    ]);
+            }
+    }
+
+
+        
+    </script>
+    <script src="https://s3.amazonaws.com/elasticbeanstalk-us-east-1-316428237323/sites/57dcd61b4d2e2d000b120f84/theme/javascripts/unemployment_by_county_2016_new.js?callback=makeArray"></script>
+    {% else %}
+    {{'script.js'| javascript_tag }}
+    {% endif %}
+
+    
+  
+  </head>
+  <body>
+    {% include 'nav' %}
+    {% block content %}
+    {% endblock %}
+    {% if page.slug == 'coloring' %}
+    {% else %}  
+    {% include 'footer' %}
+    {% endif %}
+
+    
+    {% if page.slug == 'unemploymentbycounty' %}
+    {{ 'script_fork.js' | javascript_tag }}
+    {% else %}
+    {{'script.js'| javascript_tag }}
+    {% endif %}
+     
+    {{ 'bootstrap.min.js' | javascript_tag }}
+    
+    {% google_analytics 'UA-72503172-2' %}  
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% editable_model photos %}
+<div class="row">
+  <div class="col-sm-12">
+    {% paginate contents.photos by 1 %}
+    {% for photo in paginate.collection %}
+    <div class="media">
+      <div class="media-left">
+        <a href="{{ photo.image.url }}"><img class="media-object" src="{{ photo.image.url | default: 'http://loremflickr.com/100/100' | resize: '200x200#' }}" alt="{{ photo.title }}"></a>
+      </div>
+      <div class="media-body">
+        <a href="{{ photo.image.url}}"><h4 class="media-heading">{{ photo.title }}</h4></a>
+        <p><strong>Year:</strong> {{ photo.year }}
+        <div>
+          {{ photo.description }}
+        </div>
+        <ul class="list-unstyled">
+          <li><strong>Camera:</strong> {{ photo.camera }}   </li>
+          <li><strong>Lens Info:</strong> {{ photo.lensinfo }}</li>
+          <li><strong>ISO:</strong> {{ photo.iso }}</li>
+          <li><strong>Aperture:</strong> {{ photo.aperture }}</li>
+          <li><strong>Shutter Speed:</strong> {{ photo.shutterspeed }}  </li>
+          <li><strong>Software:</strong> {{ photo.software }}  </li>
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+    {{ paginate | default_pagination }}
+    {% endpaginate %}
+  </div>
+</div>
+{% endeditable_model %}

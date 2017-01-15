@@ -1,0 +1,24 @@
+# staging:
+#   host: staging.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# production:
+#   host: www.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+#   # ssl: true
+
+development:
+  host: localhost:3000
+  handle: portfolio2016
+  email: sparkp08@gmail.com
+  api_key: d1c2bac4c4328c9fcc487e6463296e63db77dbe5
+
+live:
+  host: sparksportfolio.herokuapp.com:443
+  handle: portfolio2016
+  email: sparkp08@gmail.com
+  api_key: 772f99c3c454d1c93e792506e4af1e6124031867
+  ssl: true

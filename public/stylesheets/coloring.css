@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin:0;
+}
+
+:root {
+    --miami-one: #FFAA5C;
+    --miami-two: #DA727E;
+    --miami-three: #AC6C82;
+    --miami-four: #685C79;
+    --miami-five: #455C7B;
+    
+    --granada-one: #57385C;
+    --granada-two: #A75265;
+    --granada-three: #EC7263;
+    --granada-four: #FEBE7E;
+    --granada-five: #FFEDBC;
+    
+    --summer-one: #3B596A;
+    --summer-two: #427676;
+    --summer-three: #3F9A82;
+    --summer-four: #A1CD73;
+    --summer-five: #ECDB60;
+    
+    --dream-one: #174C4F;
+    --dream-two: #207178;
+    --dream-three: #FF9666;
+    --dream-four: #FFE184;
+    --dream-five: #F5E9BE;
+    
+    --soft-one: #0092C7;
+    --soft-two: #9FE0F6;
+    --soft-three: #F3E59A;
+    --soft-four: #F3B59B;
+    --soft-five: #F29C9C;
+}
+
+
+body {
+    background: 
+        linear-gradient(
+        180deg,
+        var(--miami-four),
+        var(--miami-four),
+        var(--miami-four),
+        var(--miami-three),
+        var(--miami-two),
+        var(--miami-three),
+        var(--miami-four),
+        var(--miami-four),
+        var(--miami-four)
+    );
+    text-align:center;
+    width: 100vw;
+    height: 100vh;
+    animation: 
+        gradient 60s linear infinite normal,
+        switch 40s linear infinite normal;
+    background-size: 400% 400%;
+    transition: animation 10s;
+}
+
+/*@keyframes switch {
+   0%{
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-five),
+            var(--dream-four),
+            var(--dream-three),
+            var(--dream-two),
+            var(--dream-one));
+       background-size: 500% 500%;
+        
+    }
+    20% {
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-four),
+            var(--dream-three),
+            var(--dream-two),
+            var(--dream-one),
+            var(--dream-five)
+        );
+        background-size: 400% 400%;
+    }
+    50% {
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-three),
+            var(--dream-two),
+            var(--dream-one),
+            var(--dream-five),
+            var(--dream-four));
+        background-size: 500% 500%;
+    }
+     60% {
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-two),
+            var(--dream-one),
+            var(--dream-five),
+            var(--dream-four),
+            var(--dream-three));
+        background-size: 400% 400%;
+    }
+    80% {
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-one),
+            var(--dream-five),
+            var(--dream-four),
+            var(--dream-three),
+            var(--dream-two));
+        background-size: 400% 400%;
+    }
+    100% {
+        background-image: linear-gradient(
+            180deg,
+            var(--dream-five),
+            var(--dream-four),
+            var(--dream-three),
+            var(--dream-two),
+            var(--dream-one));
+        background-size: 500% 500%;
+    }
+} */
+
+@keyframes gradient {
+    0%{background-position:50% 0%;}
+    50%{background-position:50% 50%;}
+    100%{background-position:50% 100%;}
+   }

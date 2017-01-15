@@ -1,0 +1,14 @@
+{
+  "name": "portfolio2016",
+  "version": "1.0.0",
+  "description": "locomotive portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Patrick Sparks",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

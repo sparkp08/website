@@ -1,0 +1,55 @@
+---
+title: Unemployment Mapped By County
+slug: unemploymentbycounty
+position: 2
+listed: false
+published: true
+is_layout: false
+---
+
+{% extends 'layouts/simple-fluid' %}
+
+{% block content/main, short_name: true %}
+     
+     <h1>Unemployment in the United States</h1>
+        <p>The map below depicts unemployment by county in the United States throughout the last year. Hover over any county for details. </p>
+      <div class='mapContainer'>
+
+      {% include 'counties' %}  
+ 		<div id='tooltip' class='tooltip'>
+        <h3>Data About this County</h3>
+        <p>So much data</p>
+      </div>
+      <div id="rightColumn">
+	    <div id="legend">
+	      <h3>Percent Unemployed</h3>
+	      <div><span class="color025 box"></span><p>Below 2.5%</p></div>
+	      <div><span class="color255 box"></span><p>Between 2.5% and 5.0%</p></div>
+	      <div><span class="color575 box"></span><p>Between 5.0% and 7.5%</p></div>
+	      <div><span class="color7510 box"></span><p>Between 7.5% and 10%</p></div>
+	      <div><span class="color10up box"></span><p>Over 10%</p></div>
+	    </div>
+	    <div id="interactive">
+	      <span id="previous" class="button">Previous</span>
+	      <select id="period" name="period">
+	        <option value="15-Sep" selected="selected">September, 2015</option>
+	        <option value="15-Oct">October, 2015</option>
+	        <option value="15-Nov">November, 2015</option>
+	        <option value="15-Dec">December, 2015</option>
+	        <option value="16-Jan">January, 2016</option>
+	        <option value="16-Feb">February, 2016</option>
+	        <option value="16-Mar">March, 2016</option>
+	        <option value="16-Apr">April, 2016</option>
+	        <option value="16-May">May, 2016</option>
+	        <option value="16-Jun">June, 2016</option>
+	        <option value="16-Jul">July, 2016</option>
+	        <option value="16-Aug">August, 2016</option>
+	        <option value="16-Sep">September, 2016</option>
+	        <option value="16-Oct">October, 2016</option>
+	    </select>
+	    <span id="next" class="button">Next</span>
+	      </div>
+    </div>
+    </div>
+
+{% endblock %}

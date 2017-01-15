@@ -1,0 +1,5 @@
+<div class="blog">
+<a href="{% path_to blog %}"><h3 class="blog-title">{{ blog.title }}</h3></a>
+<p class="blog-date"><strong>{{ blog.posted_at | date: '%m/%d/%Y' }}</strong></p>
+<div class="blog-contents">{{ blog.content | truncatewords: 100 }}<a href="{% path_to blog %}">Read More...</a></div>
+</div>

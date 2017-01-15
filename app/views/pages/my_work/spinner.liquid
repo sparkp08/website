@@ -1,0 +1,162 @@
+---
+title: Spinner
+slug: spinner
+position: 2
+listed: false
+published: true
+is_layout: false
+---
+
+{% extends 'layouts/simple' %}
+
+{% block content/main, short_name: true %}
+        <p style="margin:0 auto">Click the object to start or stop the animation</p> 
+       <div class="spinner">
+        <div id="spinner" class="miamiSunset">     
+            <svg version="1.1" class="spinnerimg" id="first" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+                <ellipse class="st0" cx="1250" cy="1250.1" rx="105.4" ry="1250"/>
+            </svg>
+
+            <svg version="1.1" class="spinnerimg" id="second" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+                <ellipse transform="matrix(0.5878 -0.809 0.809 0.5878 -496.1346 1526.5262)" class="st0" cx="1250" cy="1250.1" rx="1250" ry="105.4"/>
+            </svg>
+
+            <svg version="1.1" class="spinnerimg" id="third" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+                <ellipse transform="matrix(0.9511 -0.309 0.309 0.9511 -325.1214 447.4123)" class="st0" cx="1250" cy="1250.2" rx="1250" ry="105.5"/>
+            </svg>
+           <svg version="1.1" class="spinnerimg" id="fourth" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+               <ellipse transform="matrix(0.309 -0.9511 0.9511 0.309 -325.0728 2052.6001)" class="st0" cx="1250" cy="1250" rx="105.5" ry="1250"/>
+            </svg>
+
+           <svg version="1.1" class="spinnerimg" id="fifth" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+            <ellipse transform="matrix(0.809 -0.5878 0.5878 0.809 -496.0436 973.482)" class="st0" cx="1250" cy="1250" rx="105.4" ry="1250"/>
+            </svg>
+
+        </div>
+       <div class="clear"></div>
+       <form id="spinnerform">
+          <!--<label for="colorpalette">Color Palette</label>   
+            <input type="radio" id="colorpalette" name="colorpalette">
+            </br> -->
+            <fieldset>
+            <label for="colorTheme">Color Theme</label>
+            <select class="formInput" name="colorTheme" id="colorTheme">
+              <option>retroVintage</option>
+              <option selected="selected">miamiSunset</option>
+              <option>flatFlush</option>
+              <option>granada</option>
+              <option>summerTwilight</option>
+              <option>dream</option>
+              <option>soft</option>  
+              <option>dribble</option>  
+              <option>flatUI</option>  
+              <option>aspirinC</option>  
+            </select>
+           </fieldset>
+            </br>
+            </br>
+            <fieldset>
+            <label for="animationDuration">Duration(in ms)</label>
+            <input type="text" class="formInput" id="animationDuration" name="animationDuration">
+            </fieldset>
+            <fieldset>
+            <label for="iterationCount">Iterations</label>
+            <input class="formInput" type="iterationCount" id="iterationCount" placeholder="infinite" name="iterationCount">
+            </fieldset>
+            </br>
+            </br>
+            <fieldset>
+            <label for="transform">Transform Type</label>
+            <select class="formInput" name="transform" id="transform">
+              <option>matrix3d</option>
+              <option>matrix</option>
+              <option>translateX</option>
+              <option>translateY</option>
+              <option>scale</option>
+              <option>scaleX</option>
+              <option>scaleY</option>
+              <option selected="selected">rotate</option>
+              <option>rotateX</option>
+              <option>rotateY</option>
+              <option>rotateZ</option>
+              <option>rotate3d</option>
+              <option>skew</option>
+              <option>skewX</option>
+              <option>skewY</option>
+              <option>translate3d</option>
+              <option>translateZ</option>
+              <option>perspective</option>
+            </select>
+            </fieldset>
+            <fieldset>
+            <label for="timing">Timing Function</label>
+            <select class="formInput" name="timing" id="timing">
+              <option value="ease">Ease</option>
+              <option value="ease-in">Ease In</option>
+              <option value="ease-out">Ease Out</option>
+              <option selected="selected" value="ease-in-out">Ease In and Out</option>
+              <option value="linear">Linear</option>
+              <option value="step-start">Step Start</option>
+              <option value="step-end">Step End</option>
+            </select>
+            </fieldset>
+            <fieldset>
+            <label for="direction">Direction</label>
+            <select class="formInput" name="direction" id="direction">
+              <option value="normal">Normal</option>
+              <option value="reverse">Reverse</option>
+              <option value="alternate">Alternate</option>
+              <option value="alternate-reverse">Alternate-Reverse</option>
+            </select>
+            </fieldset>
+            </br>
+            <fieldset id="attributes" class="miamiSunset">
+            <div id='labels'>
+                <span>Start</span>
+                <span>Middle</span>
+                <span>End</span>
+            </div>
+            
+                <div id='one'>
+                    <input class="formInput" type="text" id="attrib1" value="0deg" name="attrib1">
+                    <input class="formInput" type="text" id="attrib2" value="180deg" name="attrib2">
+                    <input class="formInput" type="text" id="attrib3" value="360deg" name="attrib3">
+                </div>
+                <div id='two'>
+                    <input class="formInput" type="text" id="attrib1" value="0deg" name="attrib1">
+                    <input class="formInput" type="text" id="attrib2" value="144deg" name="attrib2">
+                    <input class="formInput" type="text" id="attrib3" value="360deg" name="attrib3">
+                </div>
+                <div id='three'>
+                    <input class="formInput" type="text" id="attrib1" value="0deg" name="attrib1">
+                    <input class="formInput" type="text" id="attrib2" value="108deg" name="attrib2">
+                    <input class="formInput" type="text" id="attrib3" value="360deg" name="attrib3">
+                </div>
+                <div id='four'>
+                    <input class="formInput" type="text" id="attrib1" value="0deg" name="attrib1">
+                    <input class="formInput" type="text" id="attrib2" value="72deg" name="attrib2">
+                    <input class="formInput" type="text" id="attrib3" value="360deg" name="attrib3">
+                </div>
+                <div id='five'>
+                    <input class="formInput" type="text" id="attrib1" value="0deg" name="attrib1">
+                    <input class="formInput" type="text" id="attrib2" value="36deg" name="attrib2">
+                    <input class="formInput" type="text" id="attrib3" value="360deg" name="attrib3">
+                </div>
+            </fieldset>
+            <input type="submit" value="submit">
+        </form> 
+           <p>Above you can experiment with different transformation types by selecting the type in the dropdown and entering the transformation start, middle, and stop attributes in the boxes provided. Each ellipse and square have their row of attributes. You can also change color, timing, easing and few other things. Click the flower to start or stop the animation, and change attributes on the fly. Play around!</p>    
+           <p>Some of the attribute types are difficult to remember, so you can check out this link for references: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform#Syntax()" target="_blank">MDN Transform Reference</a></p>
+           <p>Change the options and watch the magic happen.</p>
+           <p>I'm hoping to make this into a nice way to test CSS animations! woot woot interwebz.</p>
+            <p>Not yet mobile friendly 😭</p>
+           
+           
+        
+    <!--    <img class="wave light" src="{{ 'light2.svg' | theme_image_url }}" />
+            <img class="wave dark" src="{{ 'dark2.svg' | theme_image_url}}" /> -->
+</div>
+           
+{% endblock %}
+

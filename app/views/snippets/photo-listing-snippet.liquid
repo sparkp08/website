@@ -1,0 +1,38 @@
+
+<div class="photos">
+  <div class="col-sm-12">
+    {% paginate contents.photos by 10 %}
+    {% for photo in paginate.collection %}
+    <div>
+      <div>
+      <a href="{{ photo.image.url }}"  class="display-inline"><h3>{{ photo.title }}</h3></a>  
+      <a href="{{ photo.image.url }}"><img src="{{ photo.image.url }}" class="img-responsive" alt="{{ photo.title }}"></a>
+      </div>
+      <div>
+        
+          <p><strong>Year:</strong> {{ photo.year }}</p>
+        
+          <div class="description-left">{{ photo.description }}</div>
+         
+        <ul class="list-unstyled photo-details">
+          {% if photo.camera %}<li><strong>Camera:</strong> {{ photo.camera }}   </li>
+          {% endif %}
+          {% if photo.lensifo %}<li><strong>Lens Info:</strong> {{ photo.lensinfo }}</li>
+          {% endif %}
+          {% if photo.iso %}<li><strong>ISO:</strong> {{ photo.iso }}</li>
+          {% endif %}
+          {% if photo.aperture %}<li><strong>Aperture:</strong> {{ photo.aperture }}</li>
+          {% endif %}
+          {% if photo.shutterspeed %}<li><strong>Shutter Speed:</strong> {{ photo.shutterspeed }}  </li>
+          {% endif %}
+          {% if photo.software %}<li><strong>Software:</strong> {{ photo.software }}  </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+    {% endfor %}
+    {{ paginate | default_pagination }}
+    {% endpaginate %}
+  </div>
+</div>

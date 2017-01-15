@@ -1,0 +1,13 @@
+{% editable_model photos %}
+
+
+    {% for photo in contents.photos %}
+    <div class="display-inline  grid-photo">
+      
+        <a href="{% path_to photo %}"><img class="img-responsive trans80" src="{{ photo.square.url }}" height:"300" width:"300" alt="{{ photo.title }}"></a>
+      
+    </div>
+    {% endfor %}
+  
+
+{% endeditable_model %}

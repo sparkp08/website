@@ -1,0 +1,208 @@
+#spinner {
+  position: relative;
+  max-width: 50vh;
+  height: 50vh;
+  display: flex;
+  margin: 10em auto 5em auto;
+  opacity: 1; }
+
+.spinnerimg {
+  display: flex-block;
+  /*height: 100%;
+  left: 40%;
+  width: 10%;*/
+  position: absolute;
+  transition: animate 1s, transform 1s;
+  -webkit-transition: animate 1s, transform 1s;
+  border: 1px solid;
+  animation-play-state: paused;}
+
+fieldset {
+    border:none;
+    display:inline-block;
+    margin:0;
+    padding-left:0;
+    
+}
+
+#labels {
+    display: flex;
+   }
+
+#labels span {
+    width:84px;}
+
+.retroVintage {
+    --color-one: #524656;
+    --color-two: #CF4747;
+    --color-three: #EA7A58;
+    --color-four: #E4DCCB;
+    --color-five: #A6C4BC;}
+
+.miamiSunset {
+    --color-one: #FFAA5C;
+    --color-two: #DA727E;
+    --color-three: #AC6C82;
+    --color-four: #685C79;
+    --color-five: #455C7B;}
+
+.flatFlush {
+    --color-one: #0067A6;
+    --color-two: #00ABD8;
+    --color-three: #008972;
+    --color-four: #EFC028;
+    --color-five: #F2572D;}
+
+.granada {
+    --color-one: #57385C;
+    --color-two: #A75265;
+    --color-three: #EC7263;
+    --color-four: #FEBE7E;
+    --color-five: #FFEDBC;}
+
+.summerTwilight {
+    --color-one: #3B596A;
+    --color-two: #427676;
+    --color-three: #3F9A82;
+    --color-four: #A1CD73;
+    --color-five: #ECDB60;}
+
+.dream {
+    --color-one: #174C4F;
+    --color-two: #207178;
+    --color-three: #FF9666;
+    --color-four: #FFE184;
+    --color-five: #F5E9BE;}
+
+.soft {
+    --color-one: #0092C7;
+    --color-two: #9FE0F6;
+    --color-three: #F3E59A;
+    --color-four: #F3B59B;
+    --color-five: #F29C9C;}
+
+.dribble {
+    --color-one: #3D4C53;
+    --color-two: #70B7BA;
+    --color-three: #F1433F;
+    --color-four: #E7E1D4;
+    --color-five: #FFFFFF;}
+
+.flatUI {
+    --color-one: #2C3E50;
+    --color-two: #E74C3C;
+    --color-three: #ECF0F1;
+    --color-four: #3498DB;
+    --color-five: #2980B9;}
+
+.aspirinC {
+    --color-one: #225378;
+    --color-two: #1595A3;
+    --color-three: #ACF0F2;
+    --color-four: #F2FFE3;
+    --color-five: #EB7F00;}
+
+#attrib1, #attrib2, #attrib3, #iterationCount, #animationDuration{
+    width:80px;
+    color:white;
+   }
+
+#animationDuration, #iterationCount {
+    color: black;
+    margin-right:25px;
+}
+
+#attributes {
+    margin-top:15px;}
+select {
+    margin-right:25px;
+}
+
+#one .formInput {
+    background-color: var(--color-one);
+}
+
+#two .formInput {
+    background-color: var(--color-two);
+}
+#three .formInput {
+    background-color: var(--color-three);
+}
+#four .formInput {
+    background-color: var(--color-four);
+}
+#five .formInput {
+    background-color: var(--color-five);
+}
+
+#first {
+    animation-name: one;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    fill: var(--color-one);
+    border-color: var(--color-one);}
+
+#second {
+    animation-name: two;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    fill: var(--color-two);
+    border-color: var(--color-two);}
+
+#third {
+    animation-name: three;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    fill: var(--color-three);
+    border-color: var(--color-three);}
+
+#fourth {
+    animation-name: four;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    fill: var(--color-four);
+    border-color: var(--color-four);}
+
+#fifth {
+    animation-name: five;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    fill: var(--color-five);
+    border-color: var(--color-five);}
+
+ @keyframes one {
+  0% { transform: rotate(0deg);}
+ 50% { transform: rotate(180deg);}
+100% { transform: rotate(360deg);}}
+@keyframes two {
+  0% { transform: rotate(0deg); }
+ 50% { transform: rotate(144deg); }
+100% { transform: rotate(360deg);}}
+@keyframes three {
+  0% { transform: rotate(0deg); }
+ 50% { transform: rotate(108deg); }
+100% { transform: rotate(360deg);}}
+@keyframes four {
+  0% { transform: rotate(0deg); }
+ 50% { transform: rotate(72deg); } 
+100% { transform: rotate(360deg);}}
+@keyframes five {
+  0% { transform: rotate(0deg); }
+ 50% { transform: rotate(36deg); }
+100% { transform: rotate(360deg);}
+} 

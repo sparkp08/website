@@ -1,0 +1,41 @@
+---
+title: Home page
+published: true
+handle: home
+---
+{% extends 'layouts/simple2' %}
+
+{% block content/main %}
+  
+    <div id='home-center'>
+        <div id='logo'>{% include 'logo' %}</div>
+        <div id='name'>{% include 'name' %}</div>
+        <section id='home-about'>
+            <div id='me'>
+                <a href="{{ 'about_me' }}">{% include 'patrick-circle' %}</a>
+                <div>
+                    <a href="{{ 'about_me' }}"><h4>Me</h4></a>
+                <p>I’m a creative professional with a passion for making excellent things.</p>
+                </div>
+            </div>
+            
+            <div id='web'>
+                <a href="{{ 'my_work' }}"><span>{% include 'browser-circle' %}</span></a>
+                <div>
+                    <a href="{{ 'my_work' }}"><h4>Web Design and Development</h4></a>
+                <p>I design and develop websites. I also have experience as a
+                    Product Manager on a team making web applications.</p>
+                </div>
+            </div>
+            
+            <div id='photo'>
+                <a href="{{ 'photos_listing' }}"> <span>{% include 'camera-circle' %}</span></a>
+                <div>
+                    <a href="{{ 'photos_listing' }}"><h4>Photography</h4></a>
+                <p>I also enjoy photography and videography.</p>
+            </div>
+            </div>
+        </section>
+    </div>
+ 
+{% endblock %}
