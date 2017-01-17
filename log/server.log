@@ -1180,3 +1180,6 @@ E, [2016-12-26T23:35:04.657556 #16791] ERROR -- : Unexpected error while process
 I, [2016-12-27T15:24:41.143631 #1178]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
 I, [2016-12-27T15:24:41.145025 #1178]  INFO -- : Maximum connections set to 1024
 I, [2016-12-27T15:24:41.145125 #1178]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2017-01-15T15:11:29.495908 #18255]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2017-01-15T15:11:29.496242 #18255]  INFO -- : Maximum connections set to 1024
+I, [2017-01-15T15:11:29.496276 #18255]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop

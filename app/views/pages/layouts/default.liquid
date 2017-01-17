@@ -23,7 +23,7 @@ is_layout: true
     {% if page.slug == 'unemploymentbycounty' %}
     {{ 'unemploymentMap.css' | stylesheet_tag }}
     {% endif %} 
-    {{ 'jquery.min.js' | javascript_tag }} 
+    
 
     {% if page.slug == 'unemploymentbycounty' %}
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300,400,500,700" rel="stylesheet">
@@ -70,6 +70,7 @@ is_layout: true
     {{ 'script_fork.js' | javascript_tag }}
     {% else %}
     {{'script.js'| javascript_tag }}
+    {{ 'jquery.min.js' | javascript_tag }} 
     {% endif %}
      
     {{ 'bootstrap.min.js' | javascript_tag }}
