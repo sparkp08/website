@@ -1,0 +1,225 @@
+country,code,region,Y1960
+North America,,North America,
+Latin America & Caribbean,,Latin America & Caribbean,
+Sub-Saharan Africa,,Sub-Saharan Africa,
+East Asia & Pacific,,East Asia & Pacific,
+Middle East & North Africa,,Middle East & North Africa,
+Europe & Central Asia,,Europe & Central Asia,
+South Asia,,South Asia,
+Afghanistan,AFG,South Asia,8994793
+Albania,ALB,Europe & Central Asia,1608800
+Algeria,DZA,Middle East & North Africa,11124892
+American Samoa,ASM,East Asia & Pacific,20012
+Andorra,ADO,Europe & Central Asia,13414
+Angola,AGO,Sub-Saharan Africa,5270844
+Antigua and Barbuda,ATG,Latin America & Caribbean,54681
+Argentina,ARG,Latin America & Caribbean,20619075
+Armenia,ARM,Europe & Central Asia,1867396
+Aruba,ABW,Latin America & Caribbean,54208
+Australia,AUS,East Asia & Pacific,10276477
+Austria,AUT,Europe & Central Asia,7047539
+Azerbaijan,AZE,Europe & Central Asia,3897889
+"Bahamas, The",BHS,Latin America & Caribbean,109526
+Bahrain,BHR,Middle East & North Africa,162501
+Bangladesh,BGD,South Asia,48200702
+Barbados,BRB,Latin America & Caribbean,230934
+Belarus,BLR,Europe & Central Asia,8198000
+Belgium,BEL,Europe & Central Asia,9153489
+Belize,BLZ,Latin America & Caribbean,92068
+Benin,BEN,Sub-Saharan Africa,2431620
+Bermuda,BMU,North America,44400
+Bhutan,BTN,South Asia,224108
+Bolivia,BOL,Latin America & Caribbean,3693451
+Bosnia and Herzegovina,BIH,Europe & Central Asia,3214520
+Botswana,BWA,Sub-Saharan Africa,524029
+Brazil,BRA,Latin America & Caribbean,72493585
+British Virgin Islands,VGB,Latin America & Caribbean,8036
+Brunei Darussalam,BRN,East Asia & Pacific,81825
+Bulgaria,BGR,Europe & Central Asia,7867374
+Burkina Faso,BFA,Sub-Saharan Africa,4829291
+Burundi,BDI,Sub-Saharan Africa,2786740
+Cabo Verde,CPV,Sub-Saharan Africa,202316
+Cambodia,KHM,East Asia & Pacific,5722370
+Cameroon,CMR,Sub-Saharan Africa,5361367
+Canada,CAN,North America,17909009
+Cayman Islands,CYM,Latin America & Caribbean,7867
+Central African Republic,CAF,Sub-Saharan Africa,1503501
+Chad,TCD,Sub-Saharan Africa,3002596
+Channel Islands,CHI,Europe & Central Asia,109419
+Chile,CHL,Latin America & Caribbean,7695692
+China,CHN,East Asia & Pacific,667070000
+Colombia,COL,Latin America & Caribbean,16480384
+Comoros,COM,Sub-Saharan Africa,188732
+"Congo, Dem. Rep.",ZAR,Sub-Saharan Africa,15248246
+"Congo, Rep.",COG,Sub-Saharan Africa,1013581
+Costa Rica,CRI,Latin America & Caribbean,1333042
+Cote d'Ivoire,CIV,Sub-Saharan Africa,3474724
+Croatia,HRV,Europe & Central Asia,4140000
+Cuba,CUB,Latin America & Caribbean,7141129
+Curacao,CUW,Latin America & Caribbean,124826
+Cyprus,CYP,Europe & Central Asia,572929
+Czech Republic,CZE,Europe & Central Asia,9602006
+Denmark,DNK,Europe & Central Asia,4579603
+Djibouti,DJI,Middle East & North Africa,83636
+Dominica,DMA,Latin America & Caribbean,60016
+Dominican Republic,DOM,Latin America & Caribbean,3294039
+Ecuador,ECU,Latin America & Caribbean,4545548
+"Egypt, Arab Rep.",EGY,Middle East & North Africa,27072397
+El Salvador,SLV,Latin America & Caribbean,2762897
+Equatorial Guinea,GNQ,Sub-Saharan Africa,252115
+Eritrea,ERI,Sub-Saharan Africa,1407631
+Estonia,EST,Europe & Central Asia,1211537
+Ethiopia,ETH,Sub-Saharan Africa,22151218
+Faroe Islands,FRO,Europe & Central Asia,34266
+Fiji,FJI,East Asia & Pacific,393383
+Finland,FIN,Europe & Central Asia,4429634
+France,FRA,Europe & Central Asia,46814237
+French Polynesia,PYF,East Asia & Pacific,78083
+Gabon,GAB,Sub-Saharan Africa,499189
+"Gambia, The",GMB,Sub-Saharan Africa,367929
+Georgia,GEO,Europe & Central Asia,3645600
+Germany,DEU,Europe & Central Asia,72814900
+Ghana,GHA,Sub-Saharan Africa,6652285
+Gibraltar,GIB,Europe & Central Asia,21529
+Greece,GRC,Europe & Central Asia,8331725
+Greenland,GRL,Europe & Central Asia,32500
+Grenada,GRD,Latin America & Caribbean,89861
+Guam,GUM,East Asia & Pacific,66741
+Guatemala,GTM,Latin America & Caribbean,4127555
+Guinea,GIN,Sub-Saharan Africa,3577413
+Guinea-Bissau,GNB,Sub-Saharan Africa,616407
+Guyana,GUY,Latin America & Caribbean,564222
+Haiti,HTI,Latin America & Caribbean,3866160
+Honduras,HND,Latin America & Caribbean,2002333
+"Hong Kong SAR, China",HKG,East Asia & Pacific,3075605
+Hungary,HUN,Europe & Central Asia,9983967
+Iceland,ISL,Europe & Central Asia,175574
+India,IND,South Asia,449661874
+Indonesia,IDN,East Asia & Pacific,87792512
+"Iran, Islamic Rep.",IRN,Middle East & North Africa,21906905
+Iraq,IRQ,Middle East & North Africa,7289759
+Ireland,IRL,Europe & Central Asia,2828600
+Isle of Man,IMY,Europe & Central Asia,48441
+Israel,ISR,Middle East & North Africa,2114020
+Italy,ITA,Europe & Central Asia,50199700
+Jamaica,JAM,Latin America & Caribbean,1629003
+Japan,JPN,East Asia & Pacific,92500572
+Jordan,JOR,Middle East & North Africa,888632
+Kazakhstan,KAZ,Europe & Central Asia,9714260
+Kenya,KEN,Sub-Saharan Africa,8105440
+Kiribati,KIR,East Asia & Pacific,41234
+"Korea, Dem. PeopleÍs Rep.",PRK,East Asia & Pacific,11424179
+"Korea, Rep.",KOR,East Asia & Pacific,25012374
+Kosovo,KSV,Europe & Central Asia,947000
+Kuwait,KWT,Middle East & North Africa,261962
+Kyrgyz Republic,KGZ,Europe & Central Asia,2172300
+Lao PDR,LAO,East Asia & Pacific,2119944
+Latvia,LVA,Europe & Central Asia,2120979
+Lebanon,LBN,Middle East & North Africa,1804927
+Lesotho,LSO,Sub-Saharan Africa,851412
+Liberia,LBR,Sub-Saharan Africa,1120314
+Libya,LBY,Middle East & North Africa,1434576
+Liechtenstein,LIE,Europe & Central Asia,16504
+Lithuania,LTU,Europe & Central Asia,2778550
+Luxembourg,LUX,Europe & Central Asia,313970
+"Macao SAR, China",MAC,East Asia & Pacific,171456
+"Macedonia, FYR",MKD,Europe & Central Asia,1488664
+Madagascar,MDG,Sub-Saharan Africa,5099371
+Malawi,MWI,Sub-Saharan Africa,3618604
+Malaysia,MYS,East Asia & Pacific,8160975
+Maldives,MDV,South Asia,89875
+Mali,MLI,Sub-Saharan Africa,5263730
+Malta,MLT,Middle East & North Africa,326550
+Marshall Islands,MHL,East Asia & Pacific,14665
+Mauritania,MRT,Sub-Saharan Africa,858170
+Mauritius,MUS,Sub-Saharan Africa,659351
+Mexico,MEX,Latin America & Caribbean,38174114
+"Micronesia, Fed. Sts.",FSM,East Asia & Pacific,44539
+Moldova,MDA,Europe & Central Asia,2544000
+Monaco,MCO,Europe & Central Asia,22454
+Mongolia,MNG,East Asia & Pacific,955514
+Montenegro,MNE,Europe & Central Asia,480579
+Morocco,MAR,Middle East & North Africa,12328534
+Mozambique,MOZ,Sub-Saharan Africa,7493278
+Myanmar,MMR,East Asia & Pacific,21486424
+Namibia,NAM,Sub-Saharan Africa,602545
+Nauru,NRU,East Asia & Pacific,4433
+Nepal,NPL,South Asia,10056945
+Netherlands,NLD,Europe & Central Asia,11486631
+New Caledonia,NCL,East Asia & Pacific,79000
+New Zealand,NZL,East Asia & Pacific,2371800
+Nicaragua,NIC,Latin America & Caribbean,1774696
+Niger,NER,Sub-Saharan Africa,3395212
+Nigeria,NGA,Sub-Saharan Africa,45211614
+Northern Mariana Islands,MNP,East Asia & Pacific,10070
+Norway,NOR,Europe & Central Asia,3581239
+Oman,OMN,Middle East & North Africa,551737
+Pakistan,PAK,South Asia,44911810
+Palau,PLW,East Asia & Pacific,9638
+Panama,PAN,Latin America & Caribbean,1132924
+Papua New Guinea,PNG,East Asia & Pacific,1966957
+Paraguay,PRY,Latin America & Caribbean,1902871
+Peru,PER,Latin America & Caribbean,10061519
+Philippines,PHL,East Asia & Pacific,26273023
+Poland,POL,Europe & Central Asia,29637450
+Portugal,PRT,Europe & Central Asia,8857716
+Puerto Rico,PRI,Latin America & Caribbean,2358000
+Qatar,QAT,Middle East & North Africa,47309
+Romania,ROM,Europe & Central Asia,18406905
+Russian Federation,RUS,Europe & Central Asia,119897000
+Rwanda,RWA,Sub-Saharan Africa,2933424
+Samoa,WSM,East Asia & Pacific,108645
+San Marino,SMR,Europe & Central Asia,15393
+Sao Tome and Principe,STP,Sub-Saharan Africa,64255
+Saudi Arabia,SAU,Middle East & North Africa,4086539
+Senegal,SEN,Sub-Saharan Africa,3177560
+Serbia,SRB,Europe & Central Asia,
+Seychelles,SYC,Sub-Saharan Africa,41700
+Sierra Leone,SLE,Sub-Saharan Africa,2181701
+Singapore,SGP,East Asia & Pacific,1646400
+Sint Maarten (Dutch part),SXM,Latin America & Caribbean,
+Slovak Republic,SVK,Europe & Central Asia,4068095
+Slovenia,SVN,Europe & Central Asia,1584720
+Solomon Islands,SLB,East Asia & Pacific,117869
+Somalia,SOM,Sub-Saharan Africa,2756380
+South Africa,ZAF,Sub-Saharan Africa,17396000
+South Sudan,SSD,Sub-Saharan Africa,2955044
+Spain,ESP,Europe & Central Asia,30455000
+Sri Lanka,LKA,South Asia,9896000
+St. Kitts and Nevis,KNA,Latin America & Caribbean,51197
+St. Lucia,LCA,Latin America & Caribbean,89901
+St. Martin (French part),MAF,Latin America & Caribbean,4279
+St. Vincent and the Grenadines,VCT,Latin America & Caribbean,80948
+Sudan,SDN,Sub-Saharan Africa,7527450
+Suriname,SUR,Latin America & Caribbean,289972
+Swaziland,SWZ,Sub-Saharan Africa,349233
+Sweden,SWE,Europe & Central Asia,7484656
+Switzerland,CHE,Europe & Central Asia,5327827
+Syrian Arab Republic,SYR,Middle East & North Africa,4592777
+Tajikistan,TJK,Europe & Central Asia,2064035
+Tanzania,TZA,Sub-Saharan Africa,10074490
+Thailand,THA,East Asia & Pacific,27397178
+Timor-Leste,TMP,East Asia & Pacific,499525
+Togo,TGO,Sub-Saharan Africa,1580513
+Tonga,TON,East Asia & Pacific,61600
+Trinidad and Tobago,TTO,Latin America & Caribbean,848481
+Tunisia,TUN,Middle East & North Africa,4220701
+Turkey,TUR,Europe & Central Asia,27553280
+Turkmenistan,TKM,Europe & Central Asia,1593501
+Turks and Caicos Islands,TCA,Latin America & Caribbean,5724
+Tuvalu,TUV,East Asia & Pacific,6104
+Uganda,UGA,Sub-Saharan Africa,6788211
+Ukraine,UKR,Europe & Central Asia,42662150
+United Arab Emirates,ARE,Middle East & North Africa,92612
+United Kingdom,GBR,Europe & Central Asia,52400000
+United States,USA,North America,180671000
+Uruguay,URY,Latin America & Caribbean,2538651
+Uzbekistan,UZB,Europe & Central Asia,8789492
+Vanuatu,VUT,East Asia & Pacific,63701
+"Venezuela, RB",VEN,Latin America & Caribbean,8146845
+Vietnam,VNM,East Asia & Pacific,34743000
+Virgin Islands (U.S.),VIR,Latin America & Caribbean,32000
+West Bank and Gaza,WBG,Middle East & North Africa,
+"Yemen, Rep.",YEM,Middle East & North Africa,5166311
+Zambia,ZMB,Sub-Saharan Africa,3049586
+Zimbabwe,ZWE,Sub-Saharan Africa,3752390

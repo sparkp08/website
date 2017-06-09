@@ -46,62 +46,62 @@ body {
     display:block; }
 
 .color025 { 
-    fill: rgba(44,123,182, 1);
-    background-color: rgba(44,123,182, 1);
+    fill: rgba(239,243,255, 1);
+    background-color: rgba(239,243,255, 1);
     stroke:#000;
     stroke-linejoin:bevel;
     stroke-width:0.1px;  
     transition: fill 1s;}
 
 .color025:hover { 
-    fill: rgba(44,123,182, .5);
+    fill: rgba(239,243,255, .5);
     transition: none;}
 
 .color255 { 
-    fill: rgba(171,217,233, 1);
-    background-color: rgba(171,217,233, 1);
+    fill: rgba(189,215,231, 1);
+    background-color: rgba(189,215,231, 1);
     stroke:#000;
     stroke-linejoin:bevel;
     stroke-width:0.1px; 
     transition: fill 1s;}
 
 .color255:hover { 
-    fill: rgba(171,217,233, .5);
+    fill: rgba(189,215,231, .5);
     transition: none;}
 
 .color575 { 
-    fill: rgba(255,255,191, 1);
-    background-color: rgba(255,255,191, 1);
+    fill: rgba(107,174,214, 1);
+    background-color: rgba(107,174,214, 1);
     stroke:#000;
     stroke-linejoin:bevel;
     stroke-width:0.1px; 
     transition: fill 1s;}
 
 .color575:hover {
-    fill: rgba(255,255,191, .5);
+    fill: rgba(107,174,214, .5);
     transition: none;}
 
 .color7510 { 
-    fill: rgba(253,174,97, 1);
-    background-color: rgba(253,174,97, 1);
+    fill: rgba(49,130,189, 1);
+    background-color: rgba(49,130,189, 1);
     stroke:#000;
     stroke-linejoin:bevel;
     stroke-width:0.1px; 
     transition: fill 1s;}
 
 .color7510:hover {
-    fill: rgba(253,174,97, .5);
+    fill: rgba(49,130,189, .5);
     transition: none;}
 
 .color10up { 
-    fill: rgba(215,25,28, 1);
-    background-color: rgba(215,25,28, 1);
+    fill: rgba(8,81,156, 1);
+    background-color: rgba(8,81,156, 1);
     stroke:#000;
     stroke-linejoin:bevel;
     stroke-width:0.1px; 
     transition: fill 1s;}
 .color10up:hover {
-    fill: rgba(215,25,28, .5);
+    fill: rgba(8,81,156, .5);
     transition: none;}
 
 .cls-1 {

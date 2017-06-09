@@ -1,0 +1,53 @@
+---
+title: Occupations by State
+slug: occupations
+position: 3
+listed: false
+published: true
+is_layout: false
+---
+
+{% extends 'layouts/simple-fluid' %}
+
+{% block content/main, short_name: true %}
+<div id="content">
+  <div id="map">
+    <svg id="occupationMap" preserveAspectRatio="xMidYMid" viewbox="0 0 1200 800"></svg>
+    <div id="hoverData">
+      <h4></h4>
+      <hr>
+      <div><label>Total Employed:</label><p id="total"></p></div>
+      <div><label>Mean Salary:</label><p id="amean"></p></div>
+      <div><label>Median Salary:</label><p id="amedian"></p></div>
+      <div><label>Top 90% Salary:</label><p id="apct90"></p></div>
+      <div><label>Bototm 10% Salary:</label><p id="apct10"></p></div>
+      <div><label>Mean Hourly Wage:</label><p id="hmean"></p></div>
+      <div><label>Median Hourly Wage:</label><p id="hmedian"></p></div>
+      <div><label>Top 90% Hourly Wage:</label><p id="hpct90"></p></div>
+      <div><label>Bottom 10% Hourly Wage:</label><p id="hpct10"></p></div>
+    </div>
+  </div>
+  <div id="options">
+      <h2>Occupation:</h2>
+      
+      <select id="occupation" name="occupation"></select>
+      <h2 id="dataTitle">Data to visualize</h2>
+      <hr>
+      <div id="totals">
+        <h4>All Earners</h4>
+        <p id="tot_emp">Total Employed</p>
+      </div>
+      <div id="hourly">
+        <h4>Earnings</h4>
+        <p id="a_mean">Mean</p>
+        <p id="a_median">Median</p>
+        <p id="a_pct10">10th Percentile</p>
+        <p id="a_pct90">90th Percentile</p>
+      </div>
+  </div>
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="../javascripts/occupations.js"></script>
+
+{% endblock %}
