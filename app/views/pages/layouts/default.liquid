@@ -48,6 +48,8 @@ is_layout: true
     {% include 'nav' %}
     {% block content %}
     {% endblock %}
+    
+  </body>
     {% if page.slug == 'coloring' %}
     {% else %}  
     {% include 'footer' %}
@@ -76,5 +78,4 @@ is_layout: true
     {% endif %}
     {{ 'bootstrap.min.js' | javascript_tag }}
     {% google_analytics 'UA-72503172-2' %}  
-  </body>
 </html>
