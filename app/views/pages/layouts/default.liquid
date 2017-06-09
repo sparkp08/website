@@ -58,9 +58,13 @@ is_layout: true
         {{ 'script_fork.js' | javascript_tag }}
     {% else %}
         {{ 'jquery.min.js' | javascript_tag }} 
-        {{'script.js'| javascript_tag }}
+        
     {% endif %}
 
+    {% if page.slug == 'spinner' %}
+      {{ 'script.js' | javascript_tag }}
+    {% endif %}
+      
     {% if page.slug == 'd3test' %}
         <script src="https://d3js.org/d3.v4.js"></script>
         {{ 'flair.js' | javascript_tag }}
